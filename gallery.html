@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Newsletter Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img {
+            height: 150px;
+            width: 250px;
+            object-fit: cover;
+            border: 2px solid black;
+        }
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: #c9bfbf6d;
+            color: #333;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            background: radial-gradient(rgb(200, 212, 204), rgb(225, 205, 205));
+        }
+        header {
+            background-color: rgb(173, 204, 217);
+            color: white;
+            text-align: center;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1;
+            padding: 1em;
+            position: static;
+        }
+        .logo {
+            max-width: 50px;
+            max-height: 50px;
+            margin-right: 30px;
+        }
+        main {
+            padding-top: 60px;
+            height: calc(100vh - 60px);
+            width: 100vw;
+            overflow-y: auto;
+            background-color: white;
+        }
+        footer {
+            background-color: grey;
+            color: rgb(11, 11, 11);
+            text-align: center;
+            padding: 1px;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+            z-index: 1;
+        }
+        .news-snippet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .news-snippet img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .news-snippet h2 {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .news-snippet p {
+            font-size: 14px;
+            color: #666;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2px;
+            background-color: white;
+            padding: 20px;
+            height: calc(100vh - 120px);
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <nav>
+            <a href="index.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="gallery.html">GALLERY</a>&nbsp;&nbsp;
+        </nav>
+    </header>
+    <main>
+        <h1>Latest News</h1>
+        <section class="gallery">
+            <div class="news-snippet">
+                <img src="download.jpeg" alt="News 1">
+                <h2>Big Supreme Court Relief For Arvind Kejriwal In Delhi Liquor Policy Case</h2>
+                <p>The Supreme Court has granted Delhi Chief Minister Arvind Kejriwal bail in a money-laundering case by the Enforcement Directorate linked to the Delhi liquor policy. But Mr Kejriwal will remain in jail as he is currently being questioned by the Central Bureau of Investigation (CBI) in a separate case.</p>
+            </div>
+            <div class="news-snippet">
+                <img src="22.avif" alt="News 2">
+                <h2>Joe Biden mistakenly addresses Zelenskyy as ‘President Putin’, Ukraine leader’s reaction goes viral</h2>
+                <p>President Joe Biden’s verbal slip-up at the recent NATO summit has not gone unnoticed among social media users. The POTUS made a major gaffe after he addressed Ukrainian President Volodymyr Zelensky as 'President Putin' in front of the world leaders. This incident has now garnered global attention, with a video showing the Ukraine leader’s reaction to this slip-up going viral. In the video, he is seen stunned for a moment after Biden’s misstep.</p>
+            </div>
+            <div class="news-snippet">
+                <img src="33.avif" alt="News 3">
+                <h2>Captain Anshuman Singh's widow Smriti Singh recalls their last conversation: 'On July 18… Next day, he died'</h2>
+                <p>"It was love at first sight," recalled Smriti Singh - the wife of late Captain Anshuman Singh who was awarded Kirti Chakra posthumously for the ultimate sacrifice in saving the life of his fellow army men from a fire at Siachen.</p>
+            </div>
+            <div class="news-snippet">
+                <img src="44.jpeg" alt="News 4">
+                <h2>Virat Kohli, Anushka Sharma moving to London permanently? 4 reasons why internet thinks so</h2>
+                <p>For the last few months, the internet has been ablaze with rumours that Virat Kohli and Anushka Sharma are slowly moving to the United Kingdom. Fuel was added to the fire of these rumours yesterday, when Kohli immediately jetted off to London to reunite with his family after the victory parade in Mumbai.</p>
+            </div>
+            <div class="news-snippet">
+                <img src="55.avif" alt="News 5">
+                <h2>32 visitors narrowly escape hotel fire in Lucknow</h2>
+                <p>According to the Lucknow fire department, people were trapped on the balcony of the Raj Hotel building and inside the building, crying out for help when the firefighters arrived at the scene.</p>
+            </div>
+            <div class="news-snippet">
+                <img src="66.jpg" alt="News 6">
+                <h2>A former banker of 23 years old tells how she earned over ₹208,426,135 thanks to AI</h2>
+                <p>Renu Bhatnagar, born in New Delhi, managed to buy two houses, a Bentley, a Ferrari and visit 16 countries in just one year. Previously, she worked for minimum wage in one of the Indian banks. So how did she manage to earn so much money in one year? She tells us her story.</p>
+            </div>
+            <div class="news-snippet">
+                <img src="77.avif" alt="News 7">
+                <h2>'Open Shambhu border, regulate traffic': Supreme Court to Haryana govt</h2>
+                <p>The Supreme Court on Friday directed the Haryana government to open the barricaded Shambhu border and regulate traffic, and in a stinging remark, asked Haryana how any state government could ‘block a highway.’</p>
+            </div>
+            <div class="news-snippet">
+                <img src="88.avif" alt="News 8">
+                <h2>Sonakshi Sinha says she wants to do big roles, not be part of films that require her to do ‘two songs and four scenes’</h2>
+                <p>Sonakshi Sinha is back to work after her wedding with Zaheer Iqbal last month. The actor talked about her latest release Kakuda, which releases on ZEE5 today, in an interview with The Indian Express.</p>
+            </div>
+            <div class="news-snippet">
+                <img src="99.jpeg" alt="News 9">
+                <h2>What is Rohit Sharma, Virat Kohli, Ravindra Jadeja's future in ODIs and Tests? VVS Laxman gives bold answer</h2>
+                <p>India captain Rohit Sharma, star batter Virat Kohli and all-rounder Ravindra Jadeja will no longer feature in T20Is. The trio who have been stalwarts for India in white-ball cricket for nearly a decade and a half, decided to retire from the shortest format after winning the T20 World Cup last month.</p>
+            </div>
+            <div class="news-snippet">
+                <img src="10.jpeg" alt="News 10">
+                <h2>'Our money situation sorted. We've not lost everything': Divyanka Tripathi says after losing passport, cash in Italy</h2>
+                <p>Actor Divyanka Tripathi, who was robbed in Italy during a trip with her husband Vivek Dahiya, has shared an update about their current situation. Taking to her Instagram Stories on Friday, she said that their "money situation is kind of sorted".</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright 2023 Newsletter Website</p>
+        <p>Contact Us: <a href="mailto:info@newsletter">info@newsletter</a> | <a href="tel:1234567890">123-456-7890</a></p>
+    </footer>
+</body>
+</html>
